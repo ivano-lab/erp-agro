@@ -28,7 +28,7 @@ Este projeto está em fase inicial e aberto para sugestões e melhorias.
 
 A engenharia e documentação do projeto estão neste repositório:
 
-👉 [erp-agro-docs]()
+👉 [erp-agro-docs](https://github.com/ivano-lab/erp-agro-docs)
 
 ## Licença
 
