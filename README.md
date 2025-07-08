@@ -24,6 +24,16 @@ Desenvolver um sistema modular e escalável para facilitar a gestão rural, perm
 
 Este projeto está em fase inicial e aberto para sugestões e melhorias.
 
+## Documentação Técnica:
+
+A engenharia e documentação do projeto estão neste repositório:
+
+👉 [erp-agro-docs]()
+
 ## Licença
 
-Este projeto está licenciado sob a [MIT License](https://github.com/ivano-lab//LICENSE)
+Este projeto está licenciado sob a [MIT License](https://github.com/ivano-lab/erp-agro/LICENSE)
+
+
+ 
+
