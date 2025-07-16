@@ -12,8 +12,8 @@ erDiagram
     FAZENDA   ||--o{ AREA : possui
     AREA      ||--o{ CULTURA : contem
     AREA      ||--o{ ATIVIDADE : executa
+    CULTURA   ||--o{ SAFRA : gera
     USUARIO   ||--o{ ATIVIDADE : registra
-    ATIVIDADE }o--o{ INSUMO : consome
     ATIVIDADE ||--o{ ATIVIDADE_INSUMO : possui
     INSUMO    ||--o{ ATIVIDADE_INSUMO : utilizado_em
     
@@ -36,9 +36,15 @@ erDiagram
     CULTURA {
         int id
         string tipo
+        int area_id
+    }
+
+    SAFRA {
+        int id
+        int cultura_id
         date data_plantio
         date data_colheita
-        int area_id
+        string observacoes
     }
 
     INSUMO {
@@ -48,6 +54,9 @@ erDiagram
         float quantidade
         string unidade
         string descricao
+        string fornecedor
+        date validade
+        float custo_unitario            
     }
 
     ATIVIDADE {
@@ -55,6 +64,9 @@ erDiagram
         string tipo
         string descricao
         date data_execucao
+        datetime data_criacao
+        datetime ultima_atualizacao
+        string status
         int area_id
         int usuario_id
     }
