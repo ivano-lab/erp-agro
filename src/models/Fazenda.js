@@ -2,8 +2,8 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
 
 const Fazenda = sequelize.define('Fazenda', {
-  nome: Datatypes.STRING,
-  localizacao: Datatypes.STRING, 
+  nome: DataTypes.STRING,
+  localizacao: DataTypes.STRING, 
   hectares: DataTypes.FLOAT
 });
 

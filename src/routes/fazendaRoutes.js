@@ -3,6 +3,7 @@ const router = express.Router();
 const FazendaController = require('../controllers/fazendaController');
 
 router.get('/', FazendaController.getAllFazendas);
+router.put('/', FazendaController.criarFazenda);
 /*router.get('/:id', FazendaController.getFazendaById);
 router.post('/', FazendaController.createFazenda);
 router.put('/:id', FazendaController.updateFazenda);
