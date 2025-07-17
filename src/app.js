@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const path = require('path');
 
 const fazendaRoutes = require('./routes/fazendaRoutes');
@@ -10,10 +10,10 @@ const atividadeRoutes = require('./atividade');*/
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '..','public')));
-app.use('/api/fazenda', fazendaRoutes);
+app.use('/api/fazendas', fazendaRoutes);
 /*app.use('/api/area', areaRoutes);
 app.use('/api/cultura', culturaRoutes);
 app.use('/api/insumo', insumoRoutes);
